@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoL Esport Insights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0e0f1a;
+      color: #eaeaea;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-[#0e0f1a]">
+  <!-- Header -->
+  <header class="text-white py-6 px-4 bg-[#1a1b2e] shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold gradient-text">LoL Esport Insights</h1>
+      <nav class="space-x-6">
+        <a href="#stats" class="hover:underline">Statystyki</a>
+        <a href="#analizy" class="hover:underline">Analizy</a>
+        <a href="#kontakt" class="hover:underline">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 px-6 text-center bg-gradient-to-r from-blue-900 to-purple-900">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-5xl font-bold gradient-text mb-4">Najświeższe dane i analizy League of Legends</h2>
+      <p class="text-lg text-gray-300">Śledź statystyki zawodników, analizuj wyniki i wyprzedzaj meta-grę!</p>
+    </div>
+  </section>
+
+  <!-- Statystyki -->
+  <section id="stats" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-4xl font-semibold mb-8 text-center gradient-text">Top zawodnicy LEC</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-[#1a1b2e] p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-bold mb-2">Caps</h4>
+          <p>KDA: 4.8 • CS/Min: 9.1 • KP%: 68%</p>
+        </div>
+        <div class="bg-[#1a1b2e] p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-bold mb-2">Rekkles</h4>
+          <p>KDA: 5.3 • CS/Min: 8.5 • KP%: 72%</p>
+        </div>
+        <div class="bg-[#1a1b2e] p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-bold mb-2">Jankos</h4>
+          <p>KDA: 4.2 • CS/Min: 6.2 • KP%: 75%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analizy -->
+  <section id="analizy" class="py-16 px-6 bg-[#161722]">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-4xl font-semibold mb-8 text-center gradient-text">Ostatnie analizy meczów</h3>
+      <div class="space-y-6">
+        <div class="bg-[#1f2136] p-6 rounded-xl">
+          <h4 class="text-2xl font-bold mb-2">G2 vs MAD – walka o dominację</h4>
+          <p class="text-gray-300">G2 wykazało się świetną kontrolą mapy i rotacjami, co przełożyło się na zdecydowaną przewagę w mid-game.</p>
+        </div>
+        <div class="bg-[#1f2136] p-6 rounded-xl">
+          <h4 class="text-2xl font-bold mb-2">Fnatic powraca do formy?</h4>
+          <p class="text-gray-300">Fnatic zaskoczyło wszystkich wyborem draftu i agresywnym stylem gry. Czy to zapowiedź nowego początku?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt / Konwersja -->
+  <section id="kontakt" class="py-16 px-6">
+    <div class="max-w-md mx-auto text-center">
+      <h3 class="text-3xl font-semibold gradient-text mb-6">Skontaktuj się</h3>
+      <form action="https://formsubmit.co/matiaxcrk@gmail.com" method="POST" class="space-y-4">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Imię" class="w-full p-3 rounded-xl bg-[#1f2136] text-white" required />
+        <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded-xl bg-[#1f2136] text-white" required />
+        <textarea name="message" placeholder="Wiadomość" rows="4" class="w-full p-3 rounded-xl bg-[#1f2136] text-white" required></textarea>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 transition p-3 w-full rounded-xl font-semibold text-white">Wyślij</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 bg-[#1a1b2e]">
+    <p>&copy; 2025 Mateusz Kruk – LoL Esport Insights</p>
+  </footer>
+</body>
+</html>
